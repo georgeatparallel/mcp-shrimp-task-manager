@@ -4,7 +4,7 @@ import { StreamableHTTPClientTransport } from '@modelcontextprotocol/sdk/client/
 
 export const SEARCH_URL = 'https://search.parallel.ai/mcp';
 export const CHAT_MODEL = 'gpt-4-turbo-preview';
-export const USER_AGENT = 'shrimp-task-viewer/3.1.0';
+export const USER_AGENT = 'shrimp-task-viewer/4.0.0';
 const TOOL_NAMES = new Set(['web_search', 'web_fetch']);
 const MAX_TOOL_ROUNDS = 4;
 
@@ -60,7 +60,7 @@ export async function runChat({
         controller.signal.throwIfAborted();
         let tools;
         if (searchAllowed(searchEnabled)) {
-            client = new Client({ name: 'shrimp-task-viewer', version: '3.1.0' });
+            client = new Client({ name: 'shrimp-task-viewer', version: '4.0.0' });
             const transport = new StreamableHTTPClientTransport(new URL(SEARCH_URL), {
                 requestInit: { headers: { 'User-Agent': USER_AGENT } },
                 fetch: (url, init) => request(url, { ...init, signal: controller.signal }),

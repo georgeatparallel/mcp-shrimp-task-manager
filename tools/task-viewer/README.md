@@ -4,7 +4,7 @@ A modern, React-based web interface for viewing and managing [Shrimp Task Manage
 
 ## Web search in chat
 
-Requires Node.js 18+. Install this viewer's dependencies with `npm install`, then
+Task Viewer 4.0.0 requires Node.js 18+ (previous viewer releases supported Node.js 14+). Install this viewer's dependencies with `npm install`, then
 use the existing OpenAI chat setup. Chat now offers free web search and page
 fetching through [Parallel Search MCP](https://docs.parallel.ai/integrations/mcp/search-mcp),
 with Fast mode for search and no Parallel account or API key.

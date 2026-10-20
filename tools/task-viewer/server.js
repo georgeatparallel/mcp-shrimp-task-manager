@@ -17,7 +17,7 @@ const __dirname = path.dirname(__filename);
 dotenv.config({ path: path.join(__dirname, '.env') });
 
 // Version information
-const VERSION = '3.1.0';
+const VERSION = '4.0.0';
 const PORT = process.env.SHRIMP_VIEWER_PORT || 9998;
 const SETTINGS_FILE = path.join(os.homedir(), '.shrimp-task-viewer-settings.json');
 const GLOBAL_SETTINGS_FILE = path.join(os.homedir(), '.shrimp-task-viewer-global-settings.json');
